@@ -1,0 +1,111 @@
+body, h3, h4, p {
+
+    color: rgb(148, 1, 1);
+    font-family: 'Patua One', cursive;
+}
+#currentTime{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #d8d800;
+    background-image: linear-gradient(315deg, #68e0b2 26%, #9fa4c4 74%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.jumbotron {
+    color: black;
+	background: rgb(36,23,0);
+    background: radial-gradient(circle, rgb(104, 127, 177) 0%, rgb(90, 187, 187) 50%, rgb(137, 136, 185) 100%);
+    padding: 30px;
+    
+}
+
+.r2a {
+	border: 1px solid  rgb(136, 30, 27);
+	border-radius: 0.25rem;
+	padding-left: 1rem;
+}
+
+
+.btn-primary {
+	background-color:  rgb(136, 30, 27);
+}
+
+
+#buttons-view,
+#city-input {
+	margin-top: 1rem;
+	border: 1px solid rgb(136, 30, 27);
+	border-radius: 0.25rem;
+}
+
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.4);;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid  rgb(136, 30, 27);
+	border-radius: 0.25rem;
+}
+
+
+.card-body {
+	padding: 0.35rem;
+}
+
+
+.uvGreen {
+	background-color:  rgb(136, 30, 27);
+	border-radius: 5px;
+}
+
+
+.uvYellow {
+	background-color: lightyellow;
+	border-radius: 5px;
+}
+
+
+.uvOrange {
+	background-color: lightsalmon;
+	border-radius: 5px;
+}
+
+
+.uvRed {
+	background-color: palevioletred;
+	border-radius: 5px;
+}
+
+
+.uvPurple {
+	background-color: violet;
+	border-radius: 5px;
+}
+
+
+
+
+.card-text {
+	font-size: 10pt;
+}
+
+
+.forcast {
+	padding: 1rem;
+}
