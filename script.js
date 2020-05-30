@@ -5,14 +5,14 @@ var APIKey = "&appid=2eec2dbdcaba6e2f1c110b67cde1c0d3";
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
 // array to add cities to, to be grabbed from after search
-var citiesArray = JSON.parse(localStorage.getItem("cities")) || [];
+var cityArray = JSON.parse(localStorage.getItem("cities")) || [];
 
 const m = moment();
 
 
 
 $(document).ready(function() {
-	var city = citiesArray[citiesArray.length - 1];
+	var city = cityArray[cityArray.length - 1];
 	fiveDay(city);
 	citySearch(city);
 });
@@ -108,12 +108,12 @@ function uvIndex(lon, lat) {
 function renderButtons() {
 	$(".list-group").empty();
 
-	for (var i = 0; i < citiesArray.length; i++) {
+	for (var i = 0; i < cityArray.length; i++) {
 		var a = $("<li>");
 		a.addClass("cityName");
 		a.addClass("list-group-item");
-		a.attr("data-name", citiesArray[i]);
-		a.text(citiesArray[i]);
+		a.attr("data-name", cityArray[i]);
+		a.text(cityArray[i]);
 		$(".list-group").append(a);
 	}
 
@@ -330,19 +330,19 @@ $("#add-city").on("click", function(event) {
 
 	var containsCity = false;
 
-	if (citiesArray != null) {
-		$(citiesArray).each(function(x) {
-			if (citiesArray[x] === city) {
+	if (cityArray != null) {
+		$(cityArray).each(function(x) {
+			if (cityArray[x] === city) {
 				containsCity = true;
 			}
 		});
 	}
 
 	if (containsCity === false) {
-		citiesArray.push(city);
+		cityArray.push(city);
 	}
 
-	localStorage.setItem("cities", JSON.stringify(citiesArray));
+	localStorage.setItem("cities", JSON.stringify(cityArray));
 
 	fiveDay(city);
 

@@ -6,7 +6,8 @@ body, h3, h4, p {
 #currentTime{
     text-align: center;
     font-size: 30px;
-    color: black;
+	color: (136, 30, 27);
+	font-family: 'Patua One', 'Courier New', Courier, monospace;
 }
 
 html {
@@ -25,10 +26,11 @@ body {
 
 
 .jumbotron {
-    color: black;
+    color: (136, 30, 27);
 	background: rgb(36,23,0);
     background: radial-gradient(circle, rgb(104, 127, 177) 0%, rgb(90, 187, 187) 50%, rgb(137, 136, 185) 100%);
-    padding: 30px;
+	padding: 30px;
+	font-family: 'Patua One', 'Courier New', Courier, monospace;
     
 }
 
@@ -70,31 +72,31 @@ body {
 
 
 .uvGreen {
-	background-color:  rgb(136, 30, 27);
+	background-color:  rgb(41, 248, 0);
 	border-radius: 5px;
 }
 
 
 .uvYellow {
-	background-color: lightyellow;
+	background-color: rgb(247, 247, 58);
 	border-radius: 5px;
 }
 
 
 .uvOrange {
-	background-color: lightsalmon;
+	background-color: rgb(235, 110, 61);
 	border-radius: 5px;
 }
 
 
 .uvRed {
-	background-color: palevioletred;
+	background-color: rgb(206, 32, 32);
 	border-radius: 5px;
 }
 
 
 .uvPurple {
-	background-color: violet;
+	background-color: rgb(145, 0, 230);
 	border-radius: 5px;
 }
 
@@ -106,6 +108,6 @@ body {
 }
 
 
-.forcast {
+.forecast {
 	padding: 1rem;
 }
